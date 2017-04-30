@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/recyclerview_lista_ejemplo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:id="@+id/linearLayout1"
+            android:orientation="vertical" android:layout_weight="1">
+            <TextView android:text="TextView" android:id="@+id/txtTitulo"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:lines="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                ></TextView>
+            <TextView android:text="TextView" android:id="@+id/txtDetalle"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:ellipsize="end"
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:id="@+id/linearLayoutH"
+            android:orientation="vertical" android:layout_weight="6">
+            <ImageButton
+                android:id="@+id/imgIconoSiguiente"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/recyclerview_lista_ejemplo2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#d3d3d3" />
+
+</RelativeLayout>
